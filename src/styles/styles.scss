@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.clr::after {
+  content: '';
+  display: block;
+  clear: both;
+}

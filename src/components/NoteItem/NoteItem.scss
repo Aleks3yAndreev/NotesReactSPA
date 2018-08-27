@@ -1,0 +1,41 @@
+.note-item {
+  float: left;
+  width: 20%;
+  max-width: 200px;
+  min-height: 240px;
+  margin: 20px;
+  padding: 40px 20px 20px;
+  position: relative;
+  border-radius: 5px;
+  border: 5px solid #2196F3;
+  color: black;
+  word-wrap: break-word;
+  textarea {
+    resize: none;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .delete-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+  .description {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    span {
+      display: block;
+    }
+  }
+}

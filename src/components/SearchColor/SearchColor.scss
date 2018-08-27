@@ -1,0 +1,61 @@
+.find-color {
+  display: inline-block;
+  position: relative;
+  border: 1px solid black;
+  padding: 5px 25px 5px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 10px;
+  min-width: 235px;
+  min-height: 28px;
+  .color {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    left: 7px;
+    top: 6px;
+  }
+  .arrow {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    transition: 0.4s ease-out;
+  }
+  .drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .item {
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 5px 0;
+      position: relative;
+      border-bottom: none;
+      background-color: black;
+      color: white;
+      text-align: center;
+      &:last-child {
+        border-bottom: 1px solid black
+      }
+      &:hover {
+        background-color: blue;
+      }
+      .color {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-color: white;
+        border: 1px solid black;
+        position: absolute;
+        left: 7px;
+        top: 6px;
+      }
+    }
+  }
+}
